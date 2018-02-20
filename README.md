@@ -1,7 +1,9 @@
 # Wallpaper Downloader
 
-An application which runs through the Windows command line that allows a user to choose a 4Chan board (defaults to Wallpapers/General), search for keywords, then choose a thread to browse.  
-After choosing a thread, a GUI application opens which allows the user to browse through all of the images in that thread, and download the images of their choice.  
+A command line application that allows a user to choose a 4Chan board (default: Wallpapers), search for keywords, then choose a thread to browse.
+
+After choosing a thread, a GUI application opens which allows the user to browse through all of the images in that thread, and download the images of their choice.
+
 Note - the pyglet-fixed folder is a hand-rolled modification of Pyglet that prevents crashes under specific circumstances.
 
 ## Usage
@@ -24,7 +26,7 @@ Pressing "v" will open another GUI which allows the user to view saved images (c
 
 * Pyglet - Used for the GUI. Modified to prevent crashes under specific circumstances.
 * Requests/urllib.request - Used to scrape the chosen board / download files.
-* threading - Used to download images asyncronously.
+* threading (python stl) - Used to download images asyncronously.
 * html (python stl) - Used to unescape thread titles.
 * webbrowser (python stl) - Used to open thread/image in the default web browser.
 
