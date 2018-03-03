@@ -19,7 +19,7 @@ Pressing "v" will open another GUI which allows the user to view saved images (c
 ## How it Works
 1. The user is prompted for a board, enters keywords to search, and selects a thread from the provided search-list. The search-list is created using `find_thread` function, which crawls the chosen board and finds each instance of the keyphrase provided.
 2. When a thread is chosen, the `list_images` function is ran, which fetches a list of all the images from the selected thread.
-3. The `cache_images` function is ran asyncronously, which uses the list of images and downloads each, one, adding them to the `cache` folder.
+3. The `cache_images` function is ran asyncronously, which uses the list of images and downloads each, adding them to the `cache` folder.
 4. After a brief 1 second delay (to allow the cacher to cache the first image), the `start` function is executed which opens an interactive Pyglet GUI, allowing the user to navigate, rotate, play, and save images/gifs from the selected thread.
 
 ## Built With
