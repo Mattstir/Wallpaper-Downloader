@@ -263,7 +263,7 @@ def start():
                 try:
                     player.delete()
                 except:
-                    print("ehh")
+                    print("An unknown error occurred.")
                 image = pyglet.resource.animation("cache/" + images[current])
                 while True:
                     try:
@@ -273,7 +273,7 @@ def start():
                         break
                     except AttributeError:
                         ## Image is not yet cached
-                        print("halp")
+                        print("Display image is not yet cached")
                         None
             break
         except FileNotFoundError:
@@ -523,7 +523,7 @@ def start():
     try:
         pyglet.app.run()
     except AttributeError:
-        print("ctypes is a working, functional piece of software")
+        print("Error occurred in ctypes")
 
 
 def start_video(video = None):
@@ -551,7 +551,7 @@ def start_video(video = None):
                     del side
                     del player
             except:
-                print("FUCK")
+                print("An unknown error occurred.")
                 None
 
         @side.event
@@ -570,7 +570,7 @@ def start_video(video = None):
             try:
                 player.play()
             except:
-                print("oh")
+                print("An unknown error occurred.")
 
         pyglet.app.run()
 
